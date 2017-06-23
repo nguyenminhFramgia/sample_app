@@ -35,3 +35,5 @@ en:
       text4: "Ruby on Rails Tutorial"
       text5: " book"
       text6: "."
+  application_helper:
+    base_title: "Ruby on Rails Tutorial Sample App"
