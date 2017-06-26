@@ -1,12 +1,16 @@
 <% provide :title, t(".title") %>
 <h1><%= t ".head" %></h1>
 <p>
-  <%= t ".text1" %><a href="http://www.railstutorial.org/"><em>
-    <%= t ".text2" %>
-  </em></a><%= t ".text3" %>
-  <a href="http://www.railstutorial.org/book"><%= t ".text4" %></a><%= t ".text5" %>
-  <a href="http://screencasts.railstutorial.org/"><%= t ".text6" %></a>
+  <%= t ".text1" %>
+  <%= link_to "http://www.railstutorial.org/" do %>
+    <em>
+      <%= t ".text2" %>
+    </em>
+  <% end %>
+  <%= t ".text3" %>
+  <%= link_to t(".text4"), "http://www.railstutorial.org/book" %><%= t ".text5" %>
+  <%= link_to t(".text6"), "http://screencasts.railstutorial.org/" %>
   <%= t ".text7" %>
-  <a href="http://rubyonrails.org/"><%= t ".text8" %></a>.
+  <%= link_to t(".text8"), "http://rubyonrails.org/" %>.
   <%= t ".text9" %>
 </p>
