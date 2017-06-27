@@ -6,7 +6,9 @@ git_source(:github) do |repo_name|
 end
 
 gem "rails", "~> 5.0.3"
+gem "config"
 gem "bootstrap-sass", "3.3.7"
+gem "bcrypt", "3.1.11"
 gem "sqlite3"
 gem "puma", "~> 3.0"
 gem "sass-rails", "~> 5.0"
@@ -41,6 +43,7 @@ group :test do
   gem "scss_lint_reporter_checkstyle", require: false
   gem "rails_best_practices"
   gem "brakeman", require: false
+  gem "bundler-audit"
   gem "reek"
   gem "rails-controller-testing"
   gem "simplecov", require: false
