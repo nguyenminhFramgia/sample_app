@@ -14,6 +14,11 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+      user: "Users"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      account: "Account"
   static_pages:
     home:
       title: "Home"
@@ -57,10 +62,22 @@ en:
       text2: "This will be a signup page for new users."
       create: "Create my account"
       confirm: "Confirmation"
+    create:
+      message_success: "Welcome to the Sample App!"
   controller:
     users:
       message_success: "Welcome to the Sample App!"
+    sessions:
+      flash_danger: "Invalid email/password combination"
   shared:
     error_messages:
       text1: "The form contains "
       error: "errors"
+  sessions:
+    new:
+      title: "Log in"
+      login: "Log in"
+      signup: "Sign up now!"
+      new_user: "New user?"
+    create:
+      invalid_email_pass: "Invalid email/password combination"
