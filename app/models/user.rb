@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-
+  include SessionsHelper
   attr_accessor :remember_token
   before_save :downcase_email
 
@@ -40,6 +40,10 @@ class User < ApplicationRecord
 
   def forget
     update_attributes remember_digest: nil
+  end
+
+  def current_user? user
+    self == user
   end
 
   private

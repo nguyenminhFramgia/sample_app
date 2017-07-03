@@ -62,8 +62,25 @@ en:
       text2: "This will be a signup page for new users."
       create: "Create my account"
       confirm: "Confirmation"
+      head: "Sign up"
     create:
       message_success: "Welcome to the Sample App!"
+    destroy:
+      deleted: "User deleted"
+    update:
+      updated: "Profile updated"
+    index:
+      all_user: "All users"
+      title: "All users"
+    user:
+      warning: "You sure?"
+    edit:
+      head: "Update your profile"
+      title: "Edit user"
+      button_text: "Save changes"
+      change_avatar: "change"
+    get_user:
+      warning: "User not found."
   controller:
     users:
       message_success: "Welcome to the Sample App!"
@@ -82,3 +99,6 @@ en:
       remember_me: "Remember me on this computer"
     create:
       invalid_email_pass: "Invalid email/password combination"
+  application:
+    logged_in_user:
+      please_log_in: "Please log in."
