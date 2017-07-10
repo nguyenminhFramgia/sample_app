@@ -65,6 +65,7 @@ en:
       head: "Sign up"
     create:
       message_success: "Welcome to the Sample App!"
+      flash_info: "Please check your email to activate your account."
     destroy:
       deleted: "User deleted"
     update:
@@ -81,6 +82,8 @@ en:
       change_avatar: "change"
     get_user:
       warning: "User not found."
+    logged_in_user:
+      flash_danger: "Please log in."
   controller:
     users:
       message_success: "Welcome to the Sample App!"
@@ -99,6 +102,22 @@ en:
       remember_me: "Remember me on this computer"
     create:
       invalid_email_pass: "Invalid email/password combination"
+      text1: "Account not activated. Check your email for the activation link."
   application:
     logged_in_user:
       please_log_in: "Please log in."
+  account_activations:
+    edit:
+      success: "Account activated!"
+      danger: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      subject: "Account activation"
+      header: "Sample App"
+      text1: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+      text2: "Hi "
+      text3: "Welcome to the Sample App! Click on the link below to activate your account:"
+    password_reset:
+      header: "User#password_reset"
+      text1: ", find me in app/views/user_mailer/password_reset.html.erb"
