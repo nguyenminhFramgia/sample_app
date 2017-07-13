@@ -23,6 +23,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+    @microposts = @user.microposts.paginate page: params[:page]
+  end
+
   def update
     if @user.update_attributes user_params
       flash[:success] = t ".updated"
