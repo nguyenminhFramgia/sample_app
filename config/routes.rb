@@ -21,4 +21,12 @@ Rails.application.routes.draw do
   resources :password_resets, except: [:index, :show, :destroy]
 
   resources :microposts, only: [:create, :destroy]
+
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
+
+  resources :relationships, only: [:create, :destroy]
 end

@@ -88,6 +88,16 @@ en:
       warning: "User not found."
     logged_in_user:
       flash_danger: "Please log in."
+    following:
+      title: "Following"
+    followers:
+      title: "Followers"
+    follow:
+      submit: "Follow"
+    unfollow:
+      submit: "Unfollow"
+    show_follow:
+      text1: "Microposts:"
   controller:
     users:
       message_success: "Welcome to the Sample App!"
@@ -103,6 +113,9 @@ en:
     user_info:
       text1: "view my profile"
       text2: "micropost"
+    stats:
+      text1: "following"
+      text2: "followers"
   sessions:
     new:
       title: "Log in"

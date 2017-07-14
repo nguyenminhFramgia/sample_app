@@ -8,3 +8,4 @@ micropost:
   picture_max_size: 5.megabytes
 picture_uploader:
   image_size: [400,400]
+avatar_user_follow: 30
