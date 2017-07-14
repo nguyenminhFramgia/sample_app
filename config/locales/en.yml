@@ -27,6 +27,8 @@ en:
       text2: "Ruby on Rails Tutorial"
       text3: "sample application."
       signup: "Sign up now!"
+      micropost_header: "Micropost Feed"
+      image_alt: "Rails logo"
     about:
       title: "About"
       head: "About"
@@ -56,6 +58,8 @@ en:
   application_helper:
     base_title: "Ruby on Rails Tutorial Sample App"
   users:
+    show:
+      text1: "Microposts"
     new:
       title: "Sign up"
       text1: "Sign up"
@@ -93,6 +97,12 @@ en:
     error_messages:
       text1: "The form contains "
       error: "errors"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      post: "Post"
+    user_info:
+      text1: "view my profile"
+      text2: "micropost"
   sessions:
     new:
       title: "Log in"
@@ -150,3 +160,17 @@ en:
       submit: "Submit"
     find_user:
       flash_danger: "User not found."
+  microposts:
+    create:
+      flash_success: "Micropost created!"
+    destroy:
+      flash_success: "Micropost deleted"
+    micropost:
+      delete: "delete"
+      confirm: "You sure?"
+      posted: "Posted"
+  model:
+    micropost:
+      error: "should be less than 5MB"
+  js:
+    warning: "Maximum file size is 5MB. Please choose a smaller file."
